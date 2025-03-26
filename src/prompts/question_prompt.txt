@@ -1,0 +1,4 @@
+Write a question about the following information.The goal is to create a question to test comprehension of the information provided. When creating the question do the following:
+- Only reference details present in the information.
+- Only respond with the question, do not include your reasoning
+- Try and use language present in the information provided

@@ -1,0 +1,88 @@
+{
+    "deck": [
+        {
+            "card": {
+                "card_id": 1741272332591,
+                "state": 1,
+                "step": 0,
+                "stability": null,
+                "difficulty": null,
+                "due": "2025-03-06T14:45:32.593304+00:00",
+                "last_review": null
+            },
+            "data": "Albert has 23 sheep",
+            "title": null,
+            "tags": null,
+            "question": "How many sheep does Albert have?",
+            "source": "some-place.com",
+            "created": "2025-03-06T14:45:40.620595+00:00"
+        },
+        {
+            "card": {
+                "card_id": 1741272342621,
+                "state": 1,
+                "step": 0,
+                "stability": null,
+                "difficulty": null,
+                "due": "2025-03-06T14:45:42.622654+00:00",
+                "last_review": null
+            },
+            "data": "Bill has 99 goats",
+            "title": null,
+            "tags": null,
+            "question": "How many sheep does Bill have?",
+            "source": "another-place.net",
+            "created": "2025-03-06T14:45:43.075031+00:00"
+        },
+        {
+            "card": {
+                "card_id": 1741272345075,
+                "state": 1,
+                "step": 0,
+                "stability": null,
+                "difficulty": null,
+                "due": "2025-03-06T14:45:45.076889+00:00",
+                "last_review": null
+            },
+            "data": "Casey has 38 opossums",
+            "title": null,
+            "tags": null,
+            "question": "How many opossums does Casey have?",
+            "source": null,
+            "created": "2025-03-06T14:45:45.627483+00:00"
+        }
+    ],
+    "schedule": {
+        "parameters": [
+            0.40255,
+            1.18385,
+            3.173,
+            15.69105,
+            7.1949,
+            0.5345,
+            1.4604,
+            0.0046,
+            1.54575,
+            0.1192,
+            1.01925,
+            1.9395,
+            0.11,
+            0.29605,
+            2.2698,
+            0.2315,
+            2.9898,
+            0.51655,
+            0.6621
+        ],
+        "desired_retention": 0.9,
+        "learning_steps": [
+            60,
+            600
+        ],
+        "relearning_steps": [
+            600
+        ],
+        "maximum_interval": 36500,
+        "enable_fuzzing": true
+    }
+}

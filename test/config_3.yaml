@@ -1,0 +1,9 @@
+---
+initialized: true
+deck: 'test/config_3_deck.json'
+question: 'src/prompts/question_prompt.txt'
+answer: 'src/prompts/answer_prompt.txt'
+model params: 
+  connection: 'ollama'
+  model_type: 'llama3.2:1b'
+  host: 'http://localhost:11434'

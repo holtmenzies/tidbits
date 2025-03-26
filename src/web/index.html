@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tidbits</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Sidebar Navigation -->
+    <div class="sidebar">
+        <div class="logo">Tidbits</div>
+        <ul class="nav flex-column" id="nav-sidebar">
+
+        </ul>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="main-content">
+        <!-- Review Content -->
+        <div id="review-content">
+            <h4 class="mb-4">Card Review</h4>
+
+            <div class="hidden-card" id="review-placeholder">
+                <span class="text-muted">Nothing to Review</span>
+            </div>
+
+            <div class="card mb-4" id="review-card" style="display: none;">
+                <div class="card-body p-4">
+                    <h5 class="card-title" id="review-title">Capital of France</h5>
+                    <p class="card-text" id="review-question">What is the capital of France?</p>
+
+                    <hr class="my-3">
+
+                    <div class="answer-section hidden-content" id="answer-section">
+                        <h5 class="card-subtitle mb-2">Answer</h5>
+                        <p id="review-answer">Paris is the capital of France.</p>
+                    </div>
+
+                    <button class="btn btn-outline-secondary mt-3" id="show-answer">Show Answer</button>
+
+                    <div class="review-controls" id="rating-controls">
+                        <div class="d-flex justify-content-center gap-2" style="max-width: 300px; margin: 0 auto;">
+                            <button class="btn btn-outline-danger" id="rev-again">Again</button>
+                            <button class="btn btn-outline-warning" id="rev-hard">Hard</button>
+                            <button class="btn btn-outline-secondary" id="rev-good">Good</button>
+                            <button class="btn btn-outline-success" id="rev-easy">Easy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add Content -->
+        <div id="add-content">
+            <h4 class="mb-4">Add New Card</h4>
+
+            <!-- Form Card -->
+            <div class="card mb-4">
+                <div class="card-body p-4">
+                    <div class="mb-3">
+                        <label for="new-card-content" class="form-label">What Do You Want to Remember?</label>
+                        <textarea class="form-control" id="new-card-content" rows="3"
+                            placeholder="Enter the information you want to remember"></textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="new-card-source" class="form-label">Source</label>
+                        <textarea class="form-control" id="new-card-source" rows="3"
+                            placeholder="(Optional) Enter the source of your information"></textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="new-card-source" class="form-label">Title</label>
+                        <textarea class="form-control" id="new-card-title" rows="3"
+                            placeholder="(Optional) Create a Title"></textarea>
+                    </div>
+
+                    <button class="btn btn-primary" id="create-card-btn">Create Card</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Explore Content -->
+        <div id="explore-content">
+            <h4 class="mb-4">Explore Cards</h4>
+
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Capital Cities</h5>
+                            <p class="card-text">Collection of country capital flashcards</p>
+                            <p class="text-muted">15 cards</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Vocabulary</h5>
+                            <p class="card-text">Common English vocabulary words</p>
+                            <p class="text-muted">42 cards</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- All Cards -->
+        <div id="view-cards-content">
+            <h4 class="mb-4">View Cards</h4>
+            <div class="col" id="all-cards"></div>
+        </div>
+
+        <!-- Settings -->
+        <div id="settings-content">
+            <h4 class="mb-4">Settings</h4>
+
+            <div class="row row-cols-1 row-cols-md-2 g-4" id='setting-options'>
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <a id="settings-load">
+                                <h5 class="card-title">Load Deck</h5>
+                                <p class="card-text">Load a previously saved set of cards</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <a id="settings-save">
+                                <h5 class="card-title">Save Deck</h5>
+                                <p class="card-text">Save current deck</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+        <script src="/eel.js"></script>
+        <script src="bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

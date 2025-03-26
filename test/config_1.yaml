@@ -1,0 +1,11 @@
+---
+initialized: null
+scheduler: 'schedule.json'
+cards: 'cards.pkl'
+tidbits: 'tidbits.json'
+question: 'question.txt'
+answer: 'answer.txt'
+model params: 
+  connection: 'ollama'
+  model_type: 'llama3.2:1b'
+  host: 'Not a Host'
