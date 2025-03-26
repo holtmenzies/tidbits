@@ -2,7 +2,7 @@
 
 <img src="pics/Create Card.png" width=30%/><img src="pics/Review Card Hidden.png" width=30%/><img src="pics/Review Card Open.png" width=30%/>
 
-Tidbits is a spaced reption program that uses large language models to generate the questions.
+Tidbits is a spaced repetition program that uses large language models to generate the questions.
 
 ## Why Use LLMs
 
