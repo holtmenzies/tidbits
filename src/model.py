@@ -139,7 +139,7 @@ class OllamaClient(ModelClient):
                          },
                          {
                              'role' : 'user',
-                             'content' : "The information to remember: " + data
+                             'content' : data
                          }])        
     
     def close_connection(self):
