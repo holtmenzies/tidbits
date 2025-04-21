@@ -17,16 +17,19 @@ def review_tidbit(rating: int):
 
 # *** ADD ***
 @eel.expose
-def add_tidbit(data: str, source: str, title: str):
+def add_tidbit(data: str, usr_question: str, source: str, title: str):
     """
     Creates a new tidbit in the deck
 
     ## Parameters
     - data: the information to remember
+    - usr_question: question passed from user, if empty, model will generate question
     - source: source of the information
+    - tite: title of the tidbit
     """
 
     tid = dm.add_tidbit(data = data, 
+                        usr_question = usr_question if usr_question != "" else None,
                         source = source if source != "" else None,
                         title = title if title != "" else None)
     

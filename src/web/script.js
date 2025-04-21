@@ -179,16 +179,18 @@ function displayTidbit(tidbit, element) {
 
 // *** ADD ***
 const addCreateBtn = document.getElementById('create-card-btn');
+const addQuestion = document.getElementById('new-card-question');
 const addDataValue = document.getElementById('new-card-content');
 const addDataSource = document.getElementById('new-card-source');
 const addDataTitle = document.getElementById('new-card-title');
 
 addCreateBtn.addEventListener('click', function (e) {
     let data = addDataValue.value;
+    let usrQuestion = addQuestion.value;
     let source = addDataSource.value;
     let title = addDataTitle.value;
     if (data != "") {
-        eel.add_tidbit(data, source, title)(displayReviewCard);
+        eel.add_tidbit(data, usrQuestion, source, title)(displayReviewCard);
         let placeHolder = document.getElementById('review-placeholder');
         placeHolder.style = "display: none";
         eel.get_deck()(showAllCards);

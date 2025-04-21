@@ -55,13 +55,14 @@ class DeckManager():
             )
         
     
-    def add_tidbit(self, data, title = None, gen_title = False, gen_tags = False, **kwargs):
+    def add_tidbit(self, data, usr_question = None, title = None, gen_title = False, gen_tags = False, **kwargs):
         """
         Adds a new piece of information to the deck. The deck is treated as 
         'initialized' once at least one card has been added to the deck.
         
         ## Params
         - data: information to recall
+        - usr_question: question supplied by the user, if None, model will generate question
         - gen_title: boolean flag, if True model will create a title for the 
         tidbit
         - gen_tags: boolean flag, if True model will generate a set of tags 
@@ -78,8 +79,11 @@ class DeckManager():
             title = self.model.generate_title(data)
         if gen_tags:
             tags = self.model.generate_tags(data)
-        question = self.model.generate_question(data)
-        tid = Tidbit(card, data, title, tags, question, **kwargs)
+        tid_question = usr_question
+        if not tid_question:
+            tid_question = self.model.generate_question(data)
+
+        tid = Tidbit(card, data, title, tags, tid_question, **kwargs)
         heappush(self.deck, tid)
         self.config['initialized'] = 'true'
         return tid

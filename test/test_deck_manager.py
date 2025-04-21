@@ -15,7 +15,7 @@ def test_DeckManager():
     dm = DeckManager('test/config_2.yaml')
     assert dm.model.get_question_prompt() == "This is a short prompt"
 
-@pytest.mark.skip(reason = "Very slow to run")
+# @pytest.mark.skip(reason = "Very slow to run")
 def test_tidbit():
     """
     Tests adding a new tidbit to the deck
@@ -35,6 +35,10 @@ def test_tidbit():
 
     dm.add_tidbit("Casey has 38 opossums")
     assert dm.deck[2].data == "Casey has 38 opossums"
+
+    dm.add_tidbit("Dan has 19 elephants", "How many elephants does Dan have?")
+    assert dm.deck[3].data == "Dan has 19 elephants"
+    assert dm.deck[3].question == "How many elephants does Dan have?"
 
 def test_review_tidbit():
     """
