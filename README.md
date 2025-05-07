@@ -30,14 +30,14 @@ pip install -r requirements.txt
     - Install directly to host machine:
     ```
     # install from https://ollama.ai
-    ollama run llama3.2:1b
+    ollama run gemma3:4b-it-qat
     ```
     - -OR- Install with Docker:
     ```
-    docker exec -it ollama ollama run llama3.2:1b
+    docker exec -it ollama ollama run gemma3:4b-it-qat
     ```
     - **In either case** verify that ollama server is available at `http://localhost:11434`
-    - *Here Llama3.2 1B is used due to GPU constraints. Definitely consider using a larger model if you want / have the GPU resources*
+    - *Here gemma3:4b-it-qat is used due to GPU constraints. Definitely consider using a larger model if you want / have the GPU resources*
 4. Run the program!
 ```
 python main.py
