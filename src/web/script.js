@@ -3,7 +3,7 @@ const navTabs = [
     { id: 'review', label: 'Review', default: true },
     { id: 'add', label: 'Add', default: false },
     { id: 'view-cards', label: 'View Cards', default: false },
-    { id: 'explore', label: 'Explore', default: false },
+    // { id: 'explore', label: 'Explore', default: false }, // Not in use currently
     { id: 'settings', label: 'Settings', default: false }
 ];
 

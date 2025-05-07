@@ -81,3 +81,7 @@ body {
 #explore-content {
     display: none;
 }
+
+#review-answer {
+    white-space: pre-wrap;
+}

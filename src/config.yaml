@@ -5,5 +5,5 @@ question: 'prompts/question_prompt.txt'
 answer: 'prompts/answer_prompt.txt'
 model params: 
   connection: 'ollama'
-  model_type: 'llama3.2:1b'
+  model_type: 'gemma3:4b-it-qat'
   host: 'http://localhost:11434'
